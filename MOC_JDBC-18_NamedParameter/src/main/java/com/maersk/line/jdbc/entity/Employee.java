@@ -1,4 +1,4 @@
-package com.maersk.line.entity;
+package com.maersk.line.jdbc.entity;
 
 import lombok.Data;
 
