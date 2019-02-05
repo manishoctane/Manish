@@ -1,0 +1,57 @@
+package com.alstom.spring;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+@Configuration
+@PropertySource(value = "db.properties")
+public class DataSource {
+	@Value("${db.driver}")
+	private String driver;
+	@Value("${db.url}")
+	private String url;
+	@Value("${db.username}")
+	private String userName;
+	@Value("${db.password}")
+	private String password;
+
+	public String getDriver() {
+		return driver;
+	}
+
+	public void setDriver(String driver) {
+		this.driver = driver;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	@Override
+	public String toString() {
+		return "DataSource [driver=" + driver + ", url=" + url + ", userName=" + userName + ", password=" + password
+				+ "]";
+	}
+
+}

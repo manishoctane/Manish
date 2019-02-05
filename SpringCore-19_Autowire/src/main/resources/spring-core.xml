@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="address" class="com.alstom.spring.autowire.Address">
+		<property name="city" value="chennai" />
+		<property name="state" value="TN"></property>
+	</bean>
+
+	<!-- <bean id="person" class="com.alstom.spring.autowire.Person" autowire="byName"> 
+		<property name="pid" value="10" /> <property name="name" value="Anil" /> 
+		</bean> -->
+
+	<bean id="person" class="com.alstom.spring.autowire.Person"
+		autowire="byType" init-method="checkProperties">
+<!-- 		<property name="pid" value="10" /> -->
+		<property name="name" value="Anil" />
+	</bean>
+</beans>

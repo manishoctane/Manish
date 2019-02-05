@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="person" class="com.alstom.spring.core.Person" scope="singleton" lazy-init="true">
+		<property name="name" value="Anil"  />
+		<property name="pid" value="10"></property>
+	</bean>
+	<bean id="address" class="com.alstom.spring.core.Address" scope="prototype" abstract="true">
+	</bean>
+	<bean id="job" class="com.alstom.spring.core.Job" scope="singleton">
+	</bean>
+</beans>

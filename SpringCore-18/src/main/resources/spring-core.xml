@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- <bean id="beanInheritance" class="com.alstom.spring.core.Person" abstract="true">
+		<property name="fatherName" value="Ram" />
+		<property name="motherName" value="Sita" />
+	</bean>
+
+	<bean id="luv" class="com.alstom.spring.core.Person" parent="beanInheritance">
+		<property name="pid" value="10" />
+		<property name="name" value="luv" />
+	</bean>
+
+	<bean id="kush" class="com.alstom.spring.core.Person" parent="beanInheritance">
+		<property name="pid" value="20" />
+		<property name="name" value="kush" />
+	</bean> -->
+	
+	<bean id="beanInheritance" class="com.alstom.spring.core.Person" abstract="true" p:fatherName="Ram" p:motherName="Sita"/>
+	<bean id="luv" class="com.alstom.spring.core.Person" parent="beanInheritance" p:pid="10" p:name="luv" p:address-ref="address"/>
+	<bean id="kush" class="com.alstom.spring.core.Person" parent="beanInheritance" p:pid="20" p:name="kush" p:address-ref="address"/>
+	<bean id="address" class="com.alstom.spring.core.Address" c:city="Hyd" c:state="TS"/>
+</beans>
