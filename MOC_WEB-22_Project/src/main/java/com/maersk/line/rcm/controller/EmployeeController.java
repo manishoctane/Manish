@@ -13,22 +13,32 @@ import com.maersk.line.rcm.domain.Employee;
 import com.maersk.line.rcm.service.EmployeeService;
 
 @Controller
-@RequestMapping(path="employee")
 public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService;
 	
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping(path="employee",method=RequestMethod.GET)
 	public String displayEmployeeForm(Model model) {
 		model.addAttribute("employee", new Employee());
 		return "employeeform";
 	}
-	@RequestMapping(method=RequestMethod.POST)
+	@RequestMapping(path="employee",method=RequestMethod.POST)
 	public String processEmployeeForm(@Valid Employee employee,Errors errors) {
 		if(errors.hasErrors()) {
 			return "employeeform";
 		}
 		employeeService.save(employee);
 		return "display";
+	}
+	@RequestMapping(path="search",method=RequestMethod.GET)
+	public String searchEmployee(Model model) {
+		model.addAttribute("eno", new Employee());
+		return "empsearch";
+	}
+	@RequestMapping(path="search",method=RequestMethod.POST)
+	public String displayEmployeeData() {
+		
+		return "empdisplay";
+		
 	}
 }

@@ -1,5 +1,7 @@
 package com.maersk.line.rcm.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,10 +15,14 @@ public class EmployeeService {
 
 	public void save(Employee employee) {
 		var salaryBeforeTax = employee.getSalary();
-		var taxAmount = salaryBeforeTax*0.30;
+		var taxAmount = salaryBeforeTax * 0.30;
 		var salaryAfterTax = salaryBeforeTax - taxAmount;
 		employee.setSalary(salaryAfterTax);
 		employee.setTax(taxAmount);
 		employeeDAO.save(employee);
+	}
+
+	public List<Employee> findByEno(Integer eno) {
+		return employeeDAO.findByEno(eno);
 	}
 }
