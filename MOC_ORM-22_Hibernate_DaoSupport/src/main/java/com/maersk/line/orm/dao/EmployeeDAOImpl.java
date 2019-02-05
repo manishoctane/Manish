@@ -9,8 +9,9 @@ import com.maersk.line.orm.domain.Employee;
 
 @Repository
 public class EmployeeDAOImpl extends HibernateDaoSupport implements EmployeeDAO{
-	@Autowired
-	public EmployeeDAOImpl(SessionFactory sessionFactory) {
+
+	// Constructor
+	public EmployeeDAOImpl(@Autowired SessionFactory sessionFactory) {
 		setSessionFactory(sessionFactory);
 	}
 	@Override

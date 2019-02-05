@@ -1,0 +1,30 @@
+2018-09-15 16:56:54,071 [main] INFO  root  - Project Started : Sat Sep 15 16:56:54 IST 2018
+2018-09-15 16:56:54,074 [main] INFO  com.alstom.log4j.orm.ProcessData  - Get Data From Retrieve Data
+2018-09-15 16:56:54,077 [main] INFO  com.alstom.log4j.orm.RetrieveData  - Entered into getEmployeeData()
+2018-09-15 16:56:55,001 [main] DEBUG com.alstom.log4j.orm.RetrieveData  - Got the Connection from Database
+2018-09-15 16:56:55,184 [main] DEBUG com.alstom.log4j.orm.RetrieveData  - Got the Resultset from Database
+2018-09-15 16:56:55,218 [main] DEBUG com.alstom.log4j.orm.RetrieveData  - Connection Close from Database
+2018-09-15 16:56:55,218 [main] INFO  com.alstom.log4j.orm.RetrieveData  - Completed getEmployeeData
+2018-09-15 16:56:55,218 [main] INFO  root  - size is : [com.alstom.log4j.orm.Employee@28701274, com.alstom.log4j.orm.Employee@13c9d689, com.alstom.log4j.orm.Employee@3754a4bf, com.alstom.log4j.orm.Employee@62379589]
+2018-09-15 16:56:55,231 [main] INFO  root  - No of Employee Retrieve : 4
+2018-09-15 16:56:55,231 [main] INFO  root  - Project Completed
+2018-09-15 16:57:14,356 [main] INFO  root  - Project Started : Sat Sep 15 16:57:14 IST 2018
+2018-09-15 16:57:14,359 [main] INFO  com.alstom.log4j.orm.ProcessData  - Get Data From Retrieve Data
+2018-09-15 16:57:14,359 [main] INFO  com.alstom.log4j.orm.RetrieveData  - Entered into getEmployeeData()
+2018-09-15 16:57:15,275 [main] DEBUG com.alstom.log4j.orm.RetrieveData  - Got the Connection from Database
+2018-09-15 16:57:15,457 [main] DEBUG com.alstom.log4j.orm.RetrieveData  - Got the Resultset from Database
+2018-09-15 16:57:15,464 [main] DEBUG com.alstom.log4j.orm.RetrieveData  - Connection Close from Database
+2018-09-15 16:57:15,464 [main] INFO  com.alstom.log4j.orm.RetrieveData  - Completed getEmployeeData
+2018-09-15 16:57:15,465 [main] INFO  root  - size is : [com.alstom.log4j.orm.Employee@28701274, com.alstom.log4j.orm.Employee@13c9d689, com.alstom.log4j.orm.Employee@3754a4bf, com.alstom.log4j.orm.Employee@62379589]
+2018-09-15 16:57:15,465 [main] INFO  root  - No of Employee Retrieve : 4
+2018-09-15 16:57:15,465 [main] INFO  root  - Project Completed
+2018-09-15 16:57:57,972 [main] INFO  root  - Project Started : Sat Sep 15 16:57:57 IST 2018
+2018-09-15 16:57:57,974 [main] INFO  com.alstom.log4j.orm.ProcessData  - Get Data From Retrieve Data
+2018-09-15 16:57:57,975 [main] INFO  com.alstom.log4j.orm.RetrieveData  - Entered into getEmployeeData()
+2018-09-15 16:57:58,896 [main] DEBUG com.alstom.log4j.orm.RetrieveData  - Got the Connection from Database
+2018-09-15 16:57:59,078 [main] DEBUG com.alstom.log4j.orm.RetrieveData  - Got the Resultset from Database
+2018-09-15 16:57:59,085 [main] DEBUG com.alstom.log4j.orm.RetrieveData  - Connection Close from Database
+2018-09-15 16:57:59,085 [main] INFO  com.alstom.log4j.orm.RetrieveData  - Completed getEmployeeData
+2018-09-15 16:57:59,086 [main] INFO  root  - size is : [com.alstom.log4j.orm.Employee@28701274, com.alstom.log4j.orm.Employee@13c9d689, com.alstom.log4j.orm.Employee@3754a4bf, com.alstom.log4j.orm.Employee@62379589]
+2018-09-15 16:57:59,086 [main] INFO  root  - No of Employee Retrieve : 4
+2018-09-15 16:57:59,086 [main] INFO  root  - Project Completed
